@@ -9,4 +9,3 @@ for the various talks I wanted to go to. Included also are my personal notes tha
 The notes are taken in org format and exported to the Read The Docs format for ease of use. The links within the notes
 will either point to local papers within the repository or outside links. 
 
-To view the notes open the ``overview.html`` file in a browser
