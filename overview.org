@@ -1,0 +1,63 @@
+
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
+
+* NeurIPS 2019 
+** Sunday
+*** Google Explainability Talk
+*** Habana Labs
+** Monday (tutorials)
+*** Deep Learning with Bayesian Principles
+*** Efficent Processing of Deep Neural Network
+*** Reinforcement Learning: Past, Present, and future Prospectives
+** Tuesday
+*** [[https://neurips.cc/Conferences/2019/ScheduleMultitrack?text=&session=&event_type=Oral%2BSpotlight&day=2019-12-10][Full Day Schedule]]
+*** Logarithmic Regret for Online Control
+    - [[https://i-am-karan-singh.github.io/docs/log-control/summary.pdf][slides]]
+*** Legendre Memory Units: Continuous Time Representation in RNNs
+    - [[https://docs.google.com/document/d/1uarYP9YqcKx2Qh7sHJJhrY87C-mVZbNTAVqRKVPDXmI/edit][supplementary material]]
+*** Point Voxel CNN for Efficent 3D Deep Learning
+    - [[https://hanlab.mit.edu/projects/pvcnn/][site]]
+    - [[./Point-Voxel-3D-DL.pdf][paper]]
+*** Neural Networks with Cheap Differential Operators
+*** Sequential Neural Processes
+*** Conditional Independance Testing Using GANs
+    - [[https://neurips.cc/media/Slides/nips/2019/westballsa+b(10-10-05)-10-10-40-15681-conditional_ind.pdf][slides]]
+*** Causal Confusion in Imitation Learning
+    - [[https://sites.google.com/view/causal-confusion][site]]
+    - [[./Causal-Confusion.pdf][paper]]
+    - [[https://github.com/pimdh/causal-confusion][code]]
+*** Reducing the Varience in Online Optimization by Transporting Past Gradients
+    - [[./Implicit-Gradient-Transport.pdf][paper]]
+*** SySCD: A System-Aware Parallel Coordinate Descent Algorithm
+    - [[https://neurips.cc/media/Slides/nips/2019/westexhibitionhallb(10-16-10)-10-17-05-15802-syscd_a_system.pdf][slides]]
+    - [[https://www.zurich.ibm.com/snapml/neurips19/SySCD-poster-neurips19.pdf][poster]]
+*** Tight Regret Bounds for Model-Based Reinforcement Learning with Greedy Policies
+    - [[https://neurips.cc/media/Slides/nips/2019/westballsa+b(10-16-10)-10-17-15-15692-tight_regret_bo.pdf][slides]]
+*** Hindsight Credit Assignment
+    - [[https://www.youtube.com/watch?v=2EnckznIV2o&feature=youtu.be][Video]]
+    - [[https://neurips.cc/media/Slides/nips/2019/westballa+b(10-16-10)-10-17-20-15693-hindsight_credi.pdf][slides]]
+*** Weight Agnostic Neural Networks
+    - [[./weight-agnostic-nn.pdf][paper]]
+    - [[https://weightagnostic.github.io/slides/wann_slides.pdf][Slides]]
+    - [[https://weightagnostic.github.io/][site]]
+** Wednesday
+*** Scene Representation Networks: Continuous 3D-Structure-Aware Neural Scene Representations
+    - [[https://vsitzmann.github.io/srns/video/][video]]
+    - [[https://vsitzmann.github.io/srns/slides.pdf][slides]]
+    - [[./Scene-Representation-Networks.pdf][paper]]
+    - [[https://vsitzmann.github.io/][Author Github.io]]
+*** Principal Component Projection and Regression in Nearly Linear Time through Asymmetric SVRG
+    - [[https://neurips.cc/media/Slides/nips/2019/westballsa+b(11-10-05)-11-10-35-15700-principal_compo.pdf][slides]]
+    - [[./PCA-SVRG.pdf][paper]]
+*** PIDForest: Anomaly Detection via Partial Identification
+    - [[https://neurips.cc/media/Slides/nips/2019/westballsa+b(11-10-05)-11-10-40-15701-pidforest_anom.pdf][slides]]
+    - [[./pidforest.pdf][paper]]
+*** Guided Similarity Seperation for Image Retrieval
+    - [[./Guided-Similarity-Seperation.pdf][paper]]
+*** CNAPs: Fast and Flexible Multi-Task Classification Using Conditional Neural Adaptive Processes
+    - [[./multi-task-class-CNAP.pdf][paper]]
+    - [[https://neurips.cc/media/Slides/nips/2019/westballsa+b(11-15-50)-11-16-05-15704-fast_and_flexib.pdf][slides]]
+
+*** Beyond Online Balanced Descent: An Optimal Algorithmfor Smoothed Online Convex Optimization
+     - [[https://neurips.cc/media/Slides/nips/2019/westexhibitionhallb(11-15-50)-11-16-40-15821-beyond_online_b.pdf][slides]]
+     - [[./Online-balanced-descent.pdf][paper]]
