@@ -7,16 +7,16 @@
   own sake, but also because I found it painstaking to find the papers and slides
   for the various talks I wanted to go to. Included also are my personal notes that
   will be updated as the week goes on.
-
+  
 ** Sunday
 *** Google Explainability Talk
 *** Habana Labs
+     - [[./habana-labs.org][Notes]]
 ** Monday (tutorials)
 *** Deep Learning with Bayesian Principles
 *** Efficent Processing of Deep Neural Network
 *** Reinforcement Learning: Past, Present, and future Prospectives
 ** Tuesday
-*** [[https://neurips.cc/Conferences/2019/ScheduleMultitrack?text=&session=&event_type=Oral%2BSpotlight&day=2019-12-10][Full Day Schedule]]
 *** Logarithmic Regret for Online Control
     - [[https://i-am-karan-singh.github.io/docs/log-control/summary.pdf][slides]]
 *** Legendre Memory Units: Continuous Time Representation in RNNs
@@ -46,6 +46,11 @@
     - [[./weight-agnostic-nn.pdf][paper]]
     - [[https://weightagnostic.github.io/slides/wann_slides.pdf][Slides]]
     - [[https://weightagnostic.github.io/][site]]
+    - Questions the importance of architechture in the learning process. Makes the
+      comparison to Precocial species who have certain abilities provided at birth.
+    - Shows that a neural architechture search can perform on multiple reinforcement
+      learning and supervised learning tasks.
+    - Based on NEAT
 ** Wednesday
 *** Scene Representation Networks: Continuous 3D-Structure-Aware Neural Scene Representations
     - [[https://vsitzmann.github.io/srns/video/][video]]

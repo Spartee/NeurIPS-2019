@@ -1,0 +1,46 @@
+
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
+
+* Hands on Workshop: Implementing High Performance AI Workloads with Habana AI Processors
+  - Met with speaker earlier in the day. 
+  - Seemed to have chip running on a PC with ubuntu 18.04
+  - AI processor needed to address high latency in GPU and low throughput in CPU
+  - Bulk of processing resides in matrix multiples
+** Goya AI processor
+   - uses 8 TPC cores(tensor processing cores) with local memory
+   - shared memory between all cores
+   - Fits into PCIe 4.0
+** Synapse API
+   - Supports ONNX, MxNet, and tensorflow parsers
+   - Habana Graph compiler compiles into recipe that will be given to inference stack
+** Habana IR
+   - profile + network description -> recipe
+   - Profile is vehicle for fine-tuning performance vs accuracy
+
+** Quantization
+   - very important 
+   - should be the same for all examples, gave example of resnet on imagenet with three
+     catagories. 
+   - called through `hb.model.calibrate.quantize()`
+
+** compilation
+   - quantize, set_inputs_info, aquire device, compile the recipe
+
+** difference between TesnorRT and Habana AI
+   - TensorRT is agnostic to batch size
+   - Habana is optimized to a given batch size
+   - Habana is better with smaller batches, TensorRT is better with larger batches
+
+** Latency
+   - Acheived senteces/seq for Bert: 1507.62
+   - Thousands of images a second for ResNet
+
+** Market
+   - Claims that they have the best "available" card on the market
+   - Mentioned that Nvidia also has a similar card but that consumes much more power
+   - So the draw of the card is the inference capabilty and the low power draw.
+
+* Tools used in Talk
+  - Netron
+  - Chrome://tracing
+  - a bunch of builtin habana tools
