@@ -2,6 +2,12 @@
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
 
 * NeurIPS 2019 
+  This repository is a collection of the papers and my notes from attended talks
+  and other various parts of NeurIPS 2019. I created this repository mostly for my
+  own sake, but also because I found it painstaking to find the papers and slides
+  for the various talks I wanted to go to. Included also are my personal notes that
+  will be updated as the week goes on.
+
 ** Sunday
 *** Google Explainability Talk
 *** Habana Labs
