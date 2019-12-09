@@ -9,11 +9,42 @@
   will be updated as the week goes on.
   
 ** Sunday
-*** Google Explainability Talk
 *** Habana Labs
      - [[./habana-labs.org][Notes]]
+     - Talk was a brief showcase of the Habana Goya Inference Processor.
+       If youre not familiar with this type of processor, they allow you
+       to fine-tune the inference of your model by reducing the precision
+       of your model without accuracy lost. This sentence liberally taken
+       from the Nvidia website and summerizes the importance of reduced
+       precision:
+#+BEGIN_VERSE
+  Reduced precision inference significantly reduces application
+  latency, which is a requirement for many real-time services,
+  auto and embedded applications.
+#+END_VERSE
+*** Facebook Hardware
+    - [[./facebook-hardware.html][Notes]]
+    - Very interesting talk on the Open Accelerator Intrastructure. Couldn't
+      stay for the whole thing, but the jist of it is that the OAI stack brings
+      an open source software feel to hardware. The stack aims to reduce the
+      time to integration for AI systems. There is an impressive number of
+      companies behind it including Habana. I couldl't stay for whole talk, but
+      for more detail see link below.
+    - [[https://www.opencompute.org/blog/new-open-accelerator-infrastructure-oai-sub-project-to-launch-within-the-ocp-server-project][OAI]]
+*** ML in Finance
+    - [[./ML-in-finance.html][Notes]]
+    - Personal Note: Two Sigma folks were very nice and approachable.
+    - Attend the end of the J.P. Morgan talk and the Two Sigma talk in
+      this session. Both were very high level talks about ML in finance.
+      J.P. Morgan covered the basics of RL and their application to
+      financial data. Two Sigma's talk broke down different uses of ML
+      for finding opportunies within the market. They provided an
+      example of how break down an instagram photo into consumable
+      data for CNNs(object-recognition) and LSTMs(sentiment analysis).
+      The process of training forecasting models was also covered.
 ** Monday (tutorials)
 *** Deep Learning with Bayesian Principles
+     - [[./DL-with-Bayesian-Principles.org][Notes]]
 *** Efficent Processing of Deep Neural Network
 *** Reinforcement Learning: Past, Present, and future Prospectives
 ** Tuesday

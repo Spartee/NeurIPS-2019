@@ -1,0 +1,17 @@
+
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
+
+* Hardware at Facebook (OCP OAI)
+  - OAI - Open Accelerator Infrastructure
+  - HPC, AI and DL are all creating there own new infrastructure for
+    more or less the same task
+  - Microsoft, Facebook, and Baidu coming together to create Modular
+    Building Block Arch (MBBA)
+** OCP accelerator Module Spec 
+   - Open Source starting block for accelerators
+   - OCP is a non-profit organization
+   - Openness and modular from the get go
+** OAI - UBB
+   - universal baseboard
+   - Inspur, Hyve and ZT already building systems with this
+

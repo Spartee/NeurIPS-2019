@@ -1,0 +1,70 @@
+
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
+
+* Bayesian Learning vs Deep Learning
+  - Bridge the gap between human learning and deep learning
+  - Author states biased disclaimer
+  - Author paper - "Learning-Algorithms from Bayesian Principles"
+  - [[https://emtiyaz.github.io/][Author site]]
+  - [[https://github.com/emtiyaz][Author Github]]
+** BL models
+    - GP, BayesNets, PGMS,
+    - Trained with prior/posterior
+    - Can estimate uncertainty
+    - Sequential active online learning (lifelong learning)
+    - Integration (Global) allows for uncertainty quantification
+** DL Models
+    - Frequentist
+    - Stocastic, Scalable training
+    - better with larger more comlex models
+    - Differentiation (local) aka black box
+** Bayesian Principles
+    1. Sample -> prior
+    2. Score -> likelihood
+    3. Normalize -> posterior = likelihood x Prior
+    - Bayesian learning is able to account for changes in data that
+      cannot be accounted for in typical batch style learning. 
+
+** Bringing the two worlds together
+    - Adding to loss by taking loss from a distribution
+    - Second order methods can be dervied from bayes by choosing a mutlivariate Gaussian
+    - Showed gradient descent, and newtons method from Bayes
+ 
+*** RMSProp and Adam from Bayes
+     - Choose gaussian from diagonal covariance
+     - Replace Hessian by square of gradients
+     - Add square root for scaling vector
+ 
+*** Bayes as optimization    
+     - Expecctation of the loss function over a distribution plus entropy
+       creates variational inference. 
+
+** Uncertainty
+    - What the model doesnt know
+    - gave example of the frequency of earthquakes and two lines of fit.
+    - quantifying uncertainty avoids bias in data
+** Some bayesian deep learning mthods
+    - MC-Dropout [1]
+    - SWAG [2]
+** Variational inference methods
+   - Enable flexible distributions
+   - do not scale well to large problems (imagenet scale)
+
+** Variational Online Gauss-Newton: VOGN
+   - improve RMSprop with a bayesian touch
+
+** Model View vs. Data View 
+   - Most ML models have the "model view" which can only see the line between
+     the two classes.
+   - Bayesian models see the datapoints which are close to the line which is
+     much more important than the line itself
+   - this constitutes the difference between the view of model and data
+
+
+* Papers
+   -  "Dropout as a bayesian approximation" [1]
+   -  "A simple baseline for bayesian uncertainty in deep learning" [2]
+   -  "Practical variational inference for neural networks"
+   -  "Weight uncertainty in neural networks"
+   -  VOGN: "Fast and scalable Bayesian deep learning by weight pertubation in Adam" Khan et al
+   -  "Overcoming catastrophic forgetting" kirkpatrick - Elastic Weight Consolidation paper

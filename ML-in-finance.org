@@ -1,0 +1,46 @@
+
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
+
+* JP Morgan RL in Financial Markets
+  - financial markets are difficult for RL because of market impact
+** Action Space
+   - Small action spaces are easy to learn and large are difficult,
+   - To small of an action space, however, and the agent wont be
+     adaquately enabled for its market
+** Testing
+   - simulation? How do you simulate the financial markets? How can you
+     trust that the model will accurately capture the markets?
+   - What metric to use for offline performance evaluation?
+** Rewards in RL
+   - Naive objective would be to increase profit
+   - but how does that account for underdelivering? market impact?
+
+
+* Two Sigma - Forecasting Financial Returns using ML
+** Speakers
+   - Dai Shi
+   - Xiang Zhou
+** Efficent market hypothesis
+   - Two Sigma claims market not at efficent as it may seem
+   - Opportunies in the irrationalities of the market
+** Identifying opportunity
+   - Using ML to find mispriced securities
+   - Can we predict equity returns?
+*** Example
+     - Data source: instagram
+     - metric: product popularity
+     - predict: current and future price of the stock
+     - Use mutliple models for multiple tasks
+**** Instagram Example Subproblems
+      - How to locate the product in a post? (region based CNN)
+      - How to match the product to a company?
+      - How to predict the sentiment strength? (bert)
+** Workflow
+   - ideation, data, forecast research, simulation, release
+** Build a model from historical data that will forcast unseen future
+   - (out of sample, test) select a period in historical data and pretend its unseen future
+   - (in sample, train) Hide and research the stategy with the rest of the historical data
+   - Start with a hypothesis
+     - For example: Product Popularity -> Stock Returns
+   - Make the hypothesis testable
+     - Postive sentiment incomments -> positive future 90 day returns
