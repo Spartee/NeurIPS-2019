@@ -21,10 +21,10 @@
      catagories. 
    - called through `hb.model.calibrate.quantize()`
 
-** compilation
+** Compilation
    - quantize, set_inputs_info, aquire device, compile the recipe
 
-** difference between TesnorRT and Habana AI
+** Difference between TesnorRT and Habana AI
    - TensorRT is agnostic to batch size
    - Habana is optimized to a given batch size
    - Habana is better with smaller batches, TensorRT is better with larger batches
@@ -37,6 +37,11 @@
    - Claims that they have the best "available" card on the market
    - Mentioned that Nvidia also has a similar card but that consumes much more power
    - So the draw of the card is the inference capabilty and the low power draw.
+
+** Links
+   - [[https://github.com/NVIDIA/TensorRT/tree/release/5.1/demo/BERT][TesnorRT Bert]]
+   - [[https://habana.ai/inference/][Habana Goya, T4 comparison]]
+
 
 * Tools used in Talk
   - Netron

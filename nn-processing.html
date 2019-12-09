@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-12-09 Mon 13:00 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Sam Partee" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/styles/readtheorg/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/styles/readtheorg/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/readtheorg/js/readtheorg.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org05efd07">1. Efficent Processing of Neural Networks</a>
+<ul>
+<li><a href="#orgb383d6e">1.1. Points of Talk</a></li>
+<li><a href="#org09e2cfa">1.2. DNNs</a></li>
+<li><a href="#orge2a3864">1.3. Metrics</a></li>
+<li><a href="#org849af62">1.4. Design objectives of a NN processor</a>
+<ul>
+<li><a href="#orgd1a743d">1.4.1. Reduce the time per MAC</a></li>
+<li><a href="#org3db5aa8">1.4.2. Avoid unecessary MACS</a></li>
+<li><a href="#org0491a66">1.4.3. increase parallelism</a></li>
+<li><a href="#orgbf3709e">1.4.4. increase PE utilization</a></li>
+<li><a href="#org6968713">1.4.5. evaluation: Eyexam</a></li>
+</ul>
+</li>
+<li><a href="#org5ce07bb">1.5. Power Consumption of a NN processor</a>
+<ul>
+<li><a href="#org8bcc060">1.5.1. To reduce power usage</a></li>
+</ul>
+</li>
+<li><a href="#org46014be">1.6. Specifications to evaluate metrics</a>
+<ul>
+<li><a href="#org1789030">1.6.1. Accuracy</a></li>
+<li><a href="#org7ae5408">1.6.2. Throughput</a></li>
+<li><a href="#org11a44bd">1.6.3. Latency</a></li>
+<li><a href="#orga8c0cc8">1.6.4. Energy and Power</a></li>
+<li><a href="#orgba62df1">1.6.5. Hardware Cost</a></li>
+<li><a href="#org94ab40b">1.6.6. Flexibility</a></li>
+</ul>
+</li>
+<li><a href="#org4c83866">1.7. Reduce ops in Matrix Multiply</a></li>
+<li><a href="#org068e768">1.8. Reduce Instruction Overhead</a></li>
+<li><a href="#orgda48b98">1.9. Properties we can leverge</a></li>
+</ul>
+</li>
+<li><a href="#org38316b8">2. Co-Design</a>
+<ul>
+<li><a href="#org94fbc50">2.1. Quantization</a></li>
+<li><a href="#orge1c3079">2.2. Design considerations for reduced precision</a></li>
+<li><a href="#org369c383">2.3. Sparsity</a></li>
+<li><a href="#orgbb9e380">2.4. Design considerations for Sparsity</a></li>
+<li><a href="#org233ffa5">2.5. Neural Architecture Search (NAS)</a>
+<ul>
+<li><a href="#org4b2d9ba">2.5.1. three main components</a></li>
+<li><a href="#orgb30b08f">2.5.2. design considerations</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgbf78ff3">3. Tools</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org05efd07" class="outline-2">
+<h2 id="org05efd07"><span class="section-number-2">1</span> Efficent Processing of Neural Networks</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>Speaker: Vivienne Sze</li>
+<li>processing at the edge instead of the cloud</li>
+<li>ex. autonomous vehicles 6 gigs of data every three seconds</li>
+<li>existing processors consume too much power</li>
+<li>Given slowdown of moores law and denard scaling, we need
+specialized hardware.</li>
+</ul>
+</div>
+<div id="outline-container-orgb383d6e" class="outline-3">
+<h3 id="orgb383d6e"><span class="section-number-3">1.1</span> Points of Talk</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>What are the ky metrics?</li>
+<li>what are the callenges towards acheiving these metrics?</li>
+<li>what are the design considerations and tradeoffs?</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org09e2cfa" class="outline-3">
+<h3 id="org09e2cfa"><span class="section-number-3">1.2</span> DNNs</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>Key operation is the multiply and accumulate (MAC) 90% of computation</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge2a3864" class="outline-3">
+<h3 id="orge2a3864"><span class="section-number-3">1.3</span> Metrics</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li>Accuracy
+<ul class="org-ul">
+<li>Consider quality of result</li>
+</ul></li>
+<li>Throughout 
+<ul class="org-ul">
+<li>important for real time performance</li>
+</ul></li>
+<li>Latency
+<ul class="org-ul">
+<li>autonomous driving</li>
+</ul></li>
+<li>Energy and Power consumption
+<ul class="org-ul">
+<li>embedded devices are limited battery capacity</li>
+</ul></li>
+<li>Hardware Cost</li>
+<li>Flexibility
+<ul class="org-ul">
+<li>Range of DNN models and abiltiy on tasks</li>
+<li>ability to support future models</li>
+</ul></li>
+<li>Scalability
+<ul class="org-ul">
+<li>performance should scale with more resources</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org849af62" class="outline-3">
+<h3 id="org849af62"><span class="section-number-3">1.4</span> Design objectives of a NN processor</h3>
+<div class="outline-text-3" id="text-1-4">
+</div>
+<div id="outline-container-orgd1a743d" class="outline-4">
+<h4 id="orgd1a743d"><span class="section-number-4">1.4.1</span> Reduce the time per MAC</h4>
+<div class="outline-text-4" id="text-1-4-1">
+<ul class="org-ul">
+<li>reduce instruction overhead</li>
+<li>increase clock frequency</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3db5aa8" class="outline-4">
+<h4 id="org3db5aa8"><span class="section-number-4">1.4.2</span> Avoid unecessary MACS</h4>
+</div>
+<div id="outline-container-org0491a66" class="outline-4">
+<h4 id="org0491a66"><span class="section-number-4">1.4.3</span> increase parallelism</h4>
+<div class="outline-text-4" id="text-1-4-3">
+<ul class="org-ul">
+<li>Perform MACS in parallel</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgbf3709e" class="outline-4">
+<h4 id="orgbf3709e"><span class="section-number-4">1.4.4</span> increase PE utilization</h4>
+<div class="outline-text-4" id="text-1-4-4">
+<ul class="org-ul">
+<li>distribute workload</li>
+<li>balanced workload, weakest link phenomena</li>
+<li>memory bandwidth to get workload to the PE</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6968713" class="outline-4">
+<h4 id="org6968713"><span class="section-number-4">1.4.5</span> evaluation: Eyexam</h4>
+<div class="outline-text-4" id="text-1-4-5">
+<ul class="org-ul">
+<li>graph of MAC/cycle vs MAC/data</li>
+<li>slope at beginning due to memory bound compute, once data is there problem becomes compute bound.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org5ce07bb" class="outline-3">
+<h3 id="org5ce07bb"><span class="section-number-3">1.5</span> Power Consumption of a NN processor</h3>
+<div class="outline-text-3" id="text-1-5">
+<ul class="org-ul">
+<li>MACS actually are not what are taking power, its actually reading the data.</li>
+<li>DRAM is orders of magnitude more expensive than 16b FP multiply</li>
+</ul>
+</div>
+<div id="outline-container-org8bcc060" class="outline-4">
+<h4 id="org8bcc060"><span class="section-number-4">1.5.1</span> To reduce power usage</h4>
+<div class="outline-text-4" id="text-1-5-1">
+<ul class="org-ul">
+<li>Reduce data movement</li>
+<li>Reduce energy per MAC</li>
+<li>Reduce unnecessary MACS</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org46014be" class="outline-3">
+<h3 id="org46014be"><span class="section-number-3">1.6</span> Specifications to evaluate metrics</h3>
+<div class="outline-text-3" id="text-1-6">
+</div>
+<div id="outline-container-org1789030" class="outline-4">
+<h4 id="org1789030"><span class="section-number-4">1.6.1</span> Accuracy</h4>
+<div class="outline-text-4" id="text-1-6-1">
+<ul class="org-ul">
+<li>difficulty of dataset and task should be considered</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7ae5408" class="outline-4">
+<h4 id="org7ae5408"><span class="section-number-4">1.6.2</span> Throughput</h4>
+<div class="outline-text-4" id="text-1-6-2">
+<ul class="org-ul">
+<li>Numer of PEs with utilization stats</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org11a44bd" class="outline-4">
+<h4 id="org11a44bd"><span class="section-number-4">1.6.3</span> Latency</h4>
+<div class="outline-text-4" id="text-1-6-3">
+<ul class="org-ul">
+<li>batch size used in evaluation</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga8c0cc8" class="outline-4">
+<h4 id="orga8c0cc8"><span class="section-number-4">1.6.4</span> Energy and Power</h4>
+<div class="outline-text-4" id="text-1-6-4">
+<ul class="org-ul">
+<li>no sufficent to just report chip power consumption but also off chip memory access power consumption</li>
+<li>Without DRAM estimates one could claim low power consumption but fail drastically at evaluation time</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgba62df1" class="outline-4">
+<h4 id="orgba62df1"><span class="section-number-4">1.6.5</span> Hardware Cost</h4>
+<div class="outline-text-4" id="text-1-6-5">
+<ul class="org-ul">
+<li>on chip storage, # of PEs, chip area</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org94ab40b" class="outline-4">
+<h4 id="org94ab40b"><span class="section-number-4">1.6.6</span> Flexibility</h4>
+<div class="outline-text-4" id="text-1-6-6">
+<ul class="org-ul">
+<li>number of models supported without customization</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4c83866" class="outline-3">
+<h3 id="org4c83866"><span class="section-number-3">1.7</span> Reduce ops in Matrix Multiply</h3>
+<div class="outline-text-3" id="text-1-7">
+<ul class="org-ul">
+<li>FFT: direct conv but increases storage</li>
+<li>Strassen: slightly faster but can lead to numerical instability</li>
+<li>Winograd</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org068e768" class="outline-3">
+<h3 id="org068e768"><span class="section-number-3">1.8</span> Reduce Instruction Overhead</h3>
+<div class="outline-text-3" id="text-1-8">
+<ul class="org-ul">
+<li>Perform more macs per second
+<ul class="org-ul">
+<li>GPU: HMMA nivida instruction 64 macs</li>
+<li>CPU: Specialized vector neural network instruction</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgda48b98" class="outline-3">
+<h3 id="orgda48b98"><span class="section-number-3">1.9</span> Properties we can leverge</h3>
+<div class="outline-text-3" id="text-1-9">
+<ul class="org-ul">
+<li>Throughput: DRAM accesses are the bottleneck, around 200x more than MACS for Alexnet</li>
+<li>Input data reuse  
+<ul class="org-ul">
+<li>filter resuse</li>
+<li>convolutional reuse</li>
+</ul></li>
+<li>Spatial Arch (efficent dataflow)
+<ul class="org-ul">
+<li>small on node memory, with inter node communication</li>
+<li>allows weights, activations and partial sums to live closer to the chip</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org38316b8" class="outline-2">
+<h2 id="org38316b8"><span class="section-number-2">2</span> Co-Design</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org94fbc50" class="outline-3">
+<h3 id="org94fbc50"><span class="section-number-3">2.1</span> Quantization</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>reduce the precision to reduce latency in training and inference</li>
+<li>methods
+<ul class="org-ul">
+<li>linear quantiation</li>
+<li>log quantization</li>
+<li>non-linear quantization</li>
+<li>8-bit training with stochasic rounding</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge1c3079" class="outline-3">
+<h3 id="orge1c3079"><span class="section-number-3">2.2</span> Design considerations for reduced precision</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>impact on accuracy</li>
+<li>does hardware cost exceed benefits?</li>
+<li>evaluation
+<ul class="org-ul">
+<li>8 bit for inference and 16 bit for training (standard benchmark)</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org369c383" class="outline-3">
+<h3 id="org369c383"><span class="section-number-3">2.3</span> Sparsity</h3>
+<div class="outline-text-3" id="text-2-3">
+<ul class="org-ul">
+<li>when using activations like ReLu there are a number of weights to 0</li>
+<li>Gate Operation (reduce power consumption)</li>
+<li>Skip operations (increase throughput)</li>
+<li>Compression to reduce data movement</li>
+<li>Pruning (optimal brain damage, love that term)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgbb9e380" class="outline-3">
+<h3 id="orgbb9e380"><span class="section-number-3">2.4</span> Design considerations for Sparsity</h3>
+<div class="outline-text-3" id="text-2-4">
+<ul class="org-ul">
+<li>similar to reduced precision</li>
+<li>impact on accuracy</li>
+<li>Do you need extra hardware to identify sparsity?</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org233ffa5" class="outline-3">
+<h3 id="org233ffa5"><span class="section-number-3">2.5</span> Neural Architecture Search (NAS)</h3>
+<div class="outline-text-3" id="text-2-5">
+<ul class="org-ul">
+<li>complexity = num<sub>smaples</sub> x time<sub>persample</sub></li>
+</ul>
+</div>
+<div id="outline-container-org4b2d9ba" class="outline-4">
+<h4 id="org4b2d9ba"><span class="section-number-4">2.5.1</span> three main components</h4>
+<div class="outline-text-4" id="text-2-5-1">
+<ul class="org-ul">
+<li>search space (what is the set of all samples)</li>
+<li>optimization (where to sample)</li>
+<li>performance evaluation (how to evaluate)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb30b08f" class="outline-4">
+<h4 id="orgb30b08f"><span class="section-number-4">2.5.2</span> design considerations</h4>
+<div class="outline-text-4" id="text-2-5-2">
+<ul class="org-ul">
+<li>optimization alogrithm may limit search space</li>
+<li>probability of convergence to a good model is a commonly overlooked property</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgbf78ff3" class="outline-2">
+<h2 id="orgbf78ff3"><span class="section-number-2">3</span> Tools</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li>NetAdapt
+<ul class="org-ul">
+<li>Platform Aware DNN adaption</li>
+<li>on github.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Sam Partee</p>
+<p class="date">Created: 2019-12-09 Mon 13:00</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
+
+* Efficent Processing of Neural Networks
+   - Speaker: Vivienne Sze
+   - processing at the edge instead of the cloud
+   - ex. autonomous vehicles 6 gigs of data every three seconds
+   - existing processors consume too much power
+   - Given slowdown of moores law and denard scaling, we need
+     specialized hardware.
+** Points of Talk
+    - What are the ky metrics?
+    - what are the callenges towards acheiving these metrics?
+    - what are the design considerations and tradeoffs?
+** DNNs
+    - Key operation is the multiply and accumulate (MAC) 90% of computation
+** Metrics
+    - Accuracy
+      - Consider quality of result
+    - Throughout 
+      - important for real time performance
+    - Latency
+      - autonomous driving
+    - Energy and Power consumption
+      - embedded devices are limited battery capacity
+    - Hardware Cost
+    - Flexibility
+      - Range of DNN models and abiltiy on tasks
+      - ability to support future models
+    - Scalability
+      - performance should scale with more resources
+** Design objectives of a NN processor
+*** Reduce the time per MAC
+     - reduce instruction overhead 
+     - increase clock frequency
+*** Avoid unecessary MACS
+*** increase parallelism 
+     - Perform MACS in parallel
+*** increase PE utilization 
+     - distribute workload
+     - balanced workload, weakest link phenomena 
+     - memory bandwidth to get workload to the PE
+*** evaluation: Eyexam
+    - graph of MAC/cycle vs MAC/data
+    - slope at beginning due to memory bound compute, once data is there problem becomes compute bound.
+** Power Consumption of a NN processor
+   - MACS actually are not what are taking power, its actually reading the data.
+   - DRAM is orders of magnitude more expensive than 16b FP multiply
+*** To reduce power usage
+     - Reduce data movement
+     - Reduce energy per MAC
+     - Reduce unnecessary MACS
+
+** Specifications to evaluate metrics
+*** Accuracy
+     - difficulty of dataset and task should be considered
+*** Throughput
+     - Numer of PEs with utilization stats
+*** Latency
+     - batch size used in evaluation
+*** Energy and Power
+     - no sufficent to just report chip power consumption but also off chip memory access power consumption
+     - Without DRAM estimates one could claim low power consumption but fail drastically at evaluation time
+*** Hardware Cost 
+     - on chip storage, # of PEs, chip area
+*** Flexibility
+     - number of models supported without customization
+
+** Reduce ops in Matrix Multiply
+   - FFT: direct conv but increases storage
+   - Strassen: slightly faster but can lead to numerical instability
+   - Winograd
+** Reduce Instruction Overhead
+   - Perform more macs per second
+      - GPU: HMMA nivida instruction 64 macs
+      - CPU: Specialized vector neural network instruction
+
+** Properties we can leverge   
+   - Throughput: DRAM accesses are the bottleneck, around 200x more than MACS for Alexnet
+   - Input data reuse  
+     - filter resuse
+     - convolutional reuse
+   - Spatial Arch (efficent dataflow)
+     - small on node memory, with inter node communication
+     - allows weights, activations and partial sums to live closer to the chip
+
+    
+* Co-Design     
+** Quantization
+    - reduce the precision to reduce latency in training and inference
+    - methods
+      - linear quantiation
+      - log quantization
+      - non-linear quantization
+      - 8-bit training with stochasic rounding
+** Design considerations for reduced precision
+    - impact on accuracy
+    - does hardware cost exceed benefits?
+    - evaluation
+      - 8 bit for inference and 16 bit for training (standard benchmark)
+** Sparsity
+    - when using activations like ReLu there are a number of weights to 0
+    - Gate Operation (reduce power consumption)
+    - Skip operations (increase throughput)
+    - Compression to reduce data movement
+    - Pruning (optimal brain damage, love that term)
+** Design considerations for Sparsity 
+    - similar to reduced precision
+    - impact on accuracy
+    - Do you need extra hardware to identify sparsity?
+** Neural Architecture Search (NAS)
+    - complexity = num_smaples x time_persample
+*** three main components
+     - search space (what is the set of all samples)
+     - optimization (where to sample)
+     - performance evaluation (how to evaluate)
+*** design considerations
+     - optimization alogrithm may limit search space
+     - probability of convergence to a good model is a commonly overlooked property
+  
+* Tools
+  - NetAdapt
+     - Platform Aware DNN adaption
+     - on github.

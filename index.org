@@ -46,6 +46,7 @@
 *** Deep Learning with Bayesian Principles
      - [[./DL-with-Bayesian-Principles.org][Notes]]
 *** Efficent Processing of Deep Neural Network
+    - [[./nn-processing.html][Notes]]
 *** Reinforcement Learning: Past, Present, and future Prospectives
 ** Tuesday
 *** Logarithmic Regret for Online Control
