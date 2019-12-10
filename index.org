@@ -95,6 +95,8 @@
        in DNA structure. Cell was as rare as 7 in 10000.
      - Was able to map the spatio-temporal development of mammalian endoderm.
          - Setty et al (2019), Nature
+*** Generative Modeling by Estimating Gradients of the Data Distribution
+     - [[./gen-model-estim-gradients.pdf][Paper]]
 *** Causal Confusion in Imitation Learning
     - [[https://sites.google.com/view/causal-confusion][Site]]
     - [[./Causal-Confusion.pdf][Paper]]
