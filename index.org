@@ -81,28 +81,38 @@
     - Shows large improvement from Point NN
 *** Neural Networks with Cheap Differential Operators
 *** Sequential Neural Processes
-*** Conditional Independance Testing Using GANs
+*** Conditiional Independance Testing Using GANs
     - [[https://neurips.cc/media/Slides/nips/2019/westballsa+b(10-10-05)-10-10-40-15681-conditional_ind.pdf][Slides]]
     - [[./Conditional-I-testing-GANs.pdf][Paper]]
     - GANS in high dimensional spaces
+*** Machine Learning Meets Single-Cell Biology: Insights and Challenges
+     - Speaker: [[https://neurips.cc/Conferences/2019/Schedule?showSpeaker=3840-15485][Dana Pe'er]]
+     - Biology is becoming a data science
+     - Humancellatlas.org
+     - Mentioned the success of tSNE for biological data
+         - [[https://towardsdatascience.com/visualising-high-dimensional-datasets-using-pca-and-t-sne-in-python-8ef87e7915b][tSNE and PCA]]
+     - Was able to use DS methods to discover a new cell type that formed a checkpoint
+       in DNA structure. Cell was as rare as 7 in 10000.
+     - Was able to map the spatio-temporal development of mammalian endoderm.
+         - Setty et al (2019), Nature
 *** Causal Confusion in Imitation Learning
-    - [[https://sites.google.com/view/causal-confusion][site]]
-    - [[./Causal-Confusion.pdf][paper]]
-    - [[https://github.com/pimdh/causal-confusion][code]]
+    - [[https://sites.google.com/view/causal-confusion][Site]]
+    - [[./Causal-Confusion.pdf][Paper]]
+    - [[https://github.com/pimdh/causal-confusion][Code]]
 *** Reducing the Varience in Online Optimization by Transporting Past Gradients
-    - [[./Implicit-Gradient-Transport.pdf][paper]]
+    - [[./Implicit-Gradient-Transport.pdf][Paper]]
 *** SySCD: A System-Aware Parallel Coordinate Descent Algorithm
-    - [[https://neurips.cc/media/Slides/nips/2019/westexhibitionhallb(10-16-10)-10-17-05-15802-syscd_a_system.pdf][slides]]
-    - [[https://www.zurich.ibm.com/snapml/neurips19/SySCD-poster-neurips19.pdf][poster]]
+    - [[https://neurips.cc/media/Slides/nips/2019/westexhibitionhallb(10-16-10)-10-17-05-15802-syscd_a_system.pdf][Slides]]
+    - [[https://www.zurich.ibm.com/snapml/neurips19/SySCD-poster-neurips19.pdf][Poster]]
 *** Tight Regret Bounds for Model-Based Reinforcement Learning with Greedy Policies
-    - [[https://neurips.cc/media/Slides/nips/2019/westballsa+b(10-16-10)-10-17-15-15692-tight_regret_bo.pdf][slides]]
+    - [[https://neurips.cc/media/Slides/nips/2019/westballsa+b(10-16-10)-10-17-15-15692-tight_regret_bo.pdf][Slides]]
 *** Hindsight Credit Assignment
     - [[https://www.youtube.com/watch?v=2EnckznIV2o&feature=youtu.be][Video]]
-    - [[https://neurips.cc/media/Slides/nips/2019/westballa+b(10-16-10)-10-17-20-15693-hindsight_credi.pdf][slides]]
+    - [[https://neurips.cc/media/Slides/nips/2019/westballa+b(10-16-10)-10-17-20-15693-hindsight_credi.pdf][Slides]]
 *** Weight Agnostic Neural Networks
-    - [[./weight-agnostic-nn.pdf][paper]]
+    - [[./weight-agnostic-nn.pdf][Paper]]
     - [[https://weightagnostic.github.io/slides/wann_slides.pdf][Slides]]
-    - [[https://weightagnostic.github.io/][site]]
+    - [[https://weightagnostic.github.io/][Site]]
     - Questions the importance of architechture in the learning process. Makes the
       comparison to Precocial species who have certain abilities provided at birth.
     - Shows that a neural architechture search can perform on multiple reinforcement
