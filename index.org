@@ -64,17 +64,27 @@
        have been made to the method such as Boostrapped DQNs from Osband et al. (2018). She then
        explained the Actor Critic model and shared a number of papers I am going to go read. 
 ** Tuesday
+*** Uniform Convergence may be unable to Explain generalization in Deep Learning
+    - [[https://arxiv.org/pdf/1902.04742.pdf][Paper]]
 *** Logarithmic Regret for Online Control
-    - [[https://i-am-karan-singh.github.io/docs/log-control/summary.pdf][slides]]
+    - [[https://i-am-karan-singh.github.io/docs/log-control/summary.pdf][Slides]]
+    - [[./log-regret-online-control.pdf][Paper]]
 *** Legendre Memory Units: Continuous Time Representation in RNNs
-    - [[https://docs.google.com/document/d/1uarYP9YqcKx2Qh7sHJJhrY87C-mVZbNTAVqRKVPDXmI/edit][supplementary material]]
+    - [[https://docs.google.com/document/d/1uarYP9YqcKx2Qh7sHJJhrY87C-mVZbNTAVqRKVPDXmI/edit][Supplementary material]]
+    - [[https://github.com/abr/neurips2019][Code]]
+    - [[./legendre_memory_units.pdf][Paper]]
+    - Great talk that showed a nice hybrid arch of LSTM and LMU units for DL
 *** Point Voxel CNN for Efficent 3D Deep Learning
-    - [[https://hanlab.mit.edu/projects/pvcnn/][site]]
-    - [[./Point-Voxel-3D-DL.pdf][paper]]
+    - [[https://hanlab.mit.edu/projects/pvcnn/][Site]]
+    - [[./Point-Voxel-3D-DL.pdf][Paper]]
+    - Won gold model in Lyft Challenge
+    - Shows large improvement from Point NN
 *** Neural Networks with Cheap Differential Operators
 *** Sequential Neural Processes
 *** Conditional Independance Testing Using GANs
-    - [[https://neurips.cc/media/Slides/nips/2019/westballsa+b(10-10-05)-10-10-40-15681-conditional_ind.pdf][slides]]
+    - [[https://neurips.cc/media/Slides/nips/2019/westballsa+b(10-10-05)-10-10-40-15681-conditional_ind.pdf][Slides]]
+    - [[./Conditional-I-testing-GANs.pdf][Paper]]
+    - GANS in high dimensional spaces
 *** Causal Confusion in Imitation Learning
     - [[https://sites.google.com/view/causal-confusion][site]]
     - [[./Causal-Confusion.pdf][paper]]
