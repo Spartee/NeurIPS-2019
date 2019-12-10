@@ -48,6 +48,7 @@
 *** Efficent Processing of Deep Neural Network
     - [[./nn-processing.html][Notes]]
 *** Reinforcement Learning: Past, Present, and future Prospectives
+     - [[./RL-overview.html][Notes]]
 ** Tuesday
 *** Logarithmic Regret for Online Control
     - [[https://i-am-karan-singh.github.io/docs/log-control/summary.pdf][slides]]

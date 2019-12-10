@@ -1,0 +1,74 @@
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
+
+* Reinforcement Learning: Past, Present, and future Prospectives
+  - Katja Hofmann
+** Key RL Challenges
+   - Explore vs Exploit
+   - Credit Assignment
+   - Function approximation
+** Background
+   - Markov Decision Process (MDP) - Bellman (1953)
+      - Agent, state, reward and environment 
+      - Agent doesnt know about the dynamics of the state
+      - Reward is a modeling choice that enforces the agent behavior
+      - Behavior Policy is a distribution of action given a state.
+   - Optimality in MDP
+      - Finite Horizon 
+      - Infinite Horizon
+      - Average Reward
+   - Recursive Bellman equations define the sequence of possible decisions. The transition
+     functions take the agent from state to state where each previous set of states impacts
+     the next transition.
+   - TD-Gammon
+   - Q-learning
+   - DQN
+       - Experience replay buffer and mini-batch SGD
+       - Seperate target network stabilizes opmtimizaion targets
+       - normalized error
+       - able to play 49 atari games and reach superhuman results on 75% of them
+   - Imrpoving DQN since 2016
+       - Double Q learning (Van Hasselt et al)
+       - Average G learning (Anshel et al)
+       - Hindsight experience replay (Andrychowicz et al)
+       - Distributional RL
+       - Ape x - distributed replay buffer
+** Exploration vs Exploitation - Common Approaches
+     - Optimistic initialization
+     - Epsilion greedy
+     - Softmax Policy
+        - actions are sampled on their probability of being optimal
+     - Upper Confidence Bound
+     - Posterior Sampling
+        - agent maintains a distribution
+        - useful in bandit settings
+** Boostrapped DQN - Osband et al 2016
+   - Approximate uncertainty over Q using deep ensembles
+   - extended in 2018 with randomized prior function (Osband el al, 2018)
+
+** Actor - Critic
+   - Conservative policy iteration (CPI) (kakade and langford 2002)
+   - Trust Region Policy Optimization (TRPO) (Schulman et al 2015)
+   - Proximal Policy Optimization (PPO) (Schulman et al 2017)
+   - Soft Actor Critic (SAC) (Haarnoja et al 2018)
+   - Optimistic Actor Critic (Hofmann et al 2019)
+
+** Generalization in ML
+   - How to use various tasks to show that a learning strategy has generalized
+   - Mutli-room benchmark
+      - Agent must learn to navigate not just based on a single room
+
+** Meta-learning
+   - Model agnostic meta learning (MAML) (Finn et al 2017)
+
+** Models   
+*** learning from data?
+     - PILCO Deisenroth & Rasmussen 2011)
+     - World models (David Ha and schmidhuber 2018)
+        - learn models for policy optimization in visual domains
+     - Ensembles of Bayesian NNs (Chua et al 2018)
+
+* Papers
+   - Kaelbling, Littman and Moore
+   - Cobbe et al 2019
+   - Dayan et al 1993 (successor features)
+   - Chevalier-Boisvert el al 2018 (multi-room benchmark)
