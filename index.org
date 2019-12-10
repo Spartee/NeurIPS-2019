@@ -53,16 +53,16 @@
        equations. 
 *** Efficent Processing of Deep Neural Network
     - [[./nn-processing.html][Notes]]
-      Vivenne Sze discussed the various processing methods available and being researched
+    - Vivenne Sze discussed the various processing methods available and being researched
       for AI computation. Specifically, Sze drilled home the impact of reads from DRAM in
       training. This talk was quite dense and covered many aspects of AI processing from
       chip specifics to co-design and Neural Architecture Search (NAS).
 *** Reinforcement Learning: Past, Present, and future Prospectives
      - [[./RL-overview.html][Notes]]
-     Katja Hofmann, a part of Microsoft Research, talked about Reinforcement Learning (Rl) from
-     inception to standard practice. Hofmann outlined Deep Q-Learning and some improvements that
-     have been made to the method such as Boostrapped DQNs from Osband et al. (2018). She then
-     explained the Actor Critic model and shared a number of papers I am going to go read. 
+     - Katja Hofmann, a part of Microsoft Research, talked about Reinforcement Learning (Rl) from
+       inception to standard practice. Hofmann outlined Deep Q-Learning and some improvements that
+       have been made to the method such as Boostrapped DQNs from Osband et al. (2018). She then
+       explained the Actor Critic model and shared a number of papers I am going to go read. 
 ** Tuesday
 *** Logarithmic Regret for Online Control
     - [[https://i-am-karan-singh.github.io/docs/log-control/summary.pdf][slides]]
