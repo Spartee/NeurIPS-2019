@@ -95,14 +95,19 @@
        in DNA structure. Cell was as rare as 7 in 10000.
      - Was able to map the spatio-temporal development of mammalian endoderm.
          - Setty et al (2019), Nature
-*** Generative Modeling by Estimating Gradients of the Data Distribution
-     - [[./gen-model-estim-gradients.pdf][Paper]]
 *** Causal Confusion in Imitation Learning
     - [[https://sites.google.com/view/causal-confusion][Site]]
     - [[./Causal-Confusion.pdf][Paper]]
     - [[https://github.com/pimdh/causal-confusion][Code]]
+*** Generative Modeling by Estimating Gradients of the Data Distribution
+     - [[./gen-model-estim-gradients.pdf][Paper]]
+     - Stable training as opposed to GANs
+     - Better or comparable sample quality to GANs
+     - Inpainting example was quite cool
 *** Reducing the Varience in Online Optimization by Transporting Past Gradients
     - [[./Implicit-Gradient-Transport.pdf][Paper]]
+    - [[http://seba1511.net/projects/igt/][Project Website]]
+    - [[https://github.com/seba-1511/igt.pth][PyTorch Implementation]]
 *** SySCD: A System-Aware Parallel Coordinate Descent Algorithm
     - [[https://neurips.cc/media/Slides/nips/2019/westexhibitionhallb(10-16-10)-10-17-05-15802-syscd_a_system.pdf][Slides]]
     - [[https://www.zurich.ibm.com/snapml/neurips19/SySCD-poster-neurips19.pdf][Poster]]
@@ -121,14 +126,26 @@
       learning and supervised learning tasks.
     - Based on NEAT
 ** Wednesday
+*** Fast and Accurate Least-Mean-Squares Solvers
+    - [[./LMS.pdf][Paper]]
+    - Novel method to compute caratheodory set
+    - Mentioned heavy dependance on the dimensionality being low for benefits to show.
+*** Calibration tests in multi-class classification: A unifying framework
+    - [[./Calibration-error.pdf][Paper]]
+*** Verified Uncertainty Calibration
+    - [[https://github.com/AnanyaKumar/verified_calibration][code]]
+    - [[./uncertainty-calibration.pdf][Paper]]
+    - Platt scaling, cannot estimate calibration
+    - debiased estimator
 *** Scene Representation Networks: Continuous 3D-Structure-Aware Neural Scene Representations
     - [[https://vsitzmann.github.io/srns/video/][video]]
     - [[https://vsitzmann.github.io/srns/slides.pdf][slides]]
     - [[./Scene-Representation-Networks.pdf][paper]]
     - [[https://vsitzmann.github.io/][Author Github.io]]
 *** Principal Component Projection and Regression in Nearly Linear Time through Asymmetric SVRG
-    - [[https://neurips.cc/media/Slides/nips/2019/westballsa+b(11-10-05)-11-10-35-15700-principal_compo.pdf][slides]]
-    - [[./PCA-SVRG.pdf][paper]]
+    - [[https://neurips.cc/media/Slides/nips/2019/westballsa+b(11-10-05)-11-10-35-15700-principal_compo.pdf][Slides]]
+    - [[./PCA-SVRG.pdf][Paper]]
+    - Combining PCA and linear projection and regression (PCP, PCR)
 *** PIDForest: Anomaly Detection via Partial Identification
     - [[https://neurips.cc/media/Slides/nips/2019/westballsa+b(11-10-05)-11-10-40-15701-pidforest_anom.pdf][slides]]
     - [[./pidforest.pdf][paper]]
