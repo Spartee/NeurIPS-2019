@@ -151,10 +151,27 @@
     - [[./pidforest.pdf][paper]]
 *** Guided Similarity Seperation for Image Retrieval
     - [[./Guided-Similarity-Seperation.pdf][paper]]
+    - Graph convolutionall network that models the descriptor graph where
+      the descriptors are what are compared against for images to be retrieved.
 *** CNAPs: Fast and Flexible Multi-Task Classification Using Conditional Neural Adaptive Processes
-    - [[./multi-task-class-CNAP.pdf][paper]]
-    - [[https://neurips.cc/media/Slides/nips/2019/westballsa+b(11-15-50)-11-16-05-15704-fast_and_flexib.pdf][slides]]
-
+    - [[./multi-task-class-CNAP.pdf][Paper]]
+    - [[https://neurips.cc/media/Slides/nips/2019/westballsa+b(11-15-50)-11-16-05-15704-fast_and_flexib.pdf][Slides]]
+    - Showed added classes and added test images without re-training
+    - Meta-Dataset: a dataset of datasets
+    - [[https://github.com/cambridge-mlg/cnaps][Code]]
+*** Multimodal Model-Agnostic Meta-Learning via Task-Aware Modulation
+     - [[https://vuoristo.github.io/MMAML/mmaml_slides.pdf][Slides]]
+*** Efficient Meta Learning via Minibatch Proximal Update
+     - [[https://neurips.cc/media/Slides/nips/2019/westballa+b(11-15-50)-11-16-15-15706-efficient_meta_.pdf][Slides]]
+*** Reconciling meta-learning and continual learning with online mixtures of tasks
+     - [[https://drive.google.com/file/d/1nFyU_7YF01VXjxLHdQ3_EYkLhUV8Jhmy/view][Slides]]
 *** Beyond Online Balanced Descent: An Optimal Algorithmfor Smoothed Online Convex Optimization
      - [[https://neurips.cc/media/Slides/nips/2019/westexhibitionhallb(11-15-50)-11-16-40-15821-beyond_online_b.pdf][slides]]
      - [[./Online-balanced-descent.pdf][paper]]
+     - Goal wasnt to minimize regret, was to acheive optimal competative ratio.
+     - Competitive ratio: Minimize cost of learner action compared to best possible course of action
+*** Strategizing against No-regret Learners
+     - Two types of agents: Strategic and Learning
+     - Strategic agents maximize utility whereas learning agents play to learn how to play
+     - Bidders behavior in online auctions is laregly consistent with a no-regret learner
+     - mean-based algorithm: play the historically best action
