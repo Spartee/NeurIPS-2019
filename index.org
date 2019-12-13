@@ -7,6 +7,7 @@
   own sake, but also because I found it painstaking to find the papers and slides
   for the various talks I wanted to go to. Included also are my personal notes that
   will be updated as the week goes on.
+   - [[https://slideslive.com/neurips/][Slides Live]]
   
 ** Sunday
 *** Habana Labs
@@ -210,4 +211,16 @@
 *** XLNet: Generalized Autoregressive Pretraining for Language Understanding
      - [[./xlnet.pdf][Paper]]
 *** On the Downstream Performance of Compressed Word Embeddings
-
+** Workshops
+*** MLSys: Systems for machine learning
+    - This workshop surronds tools for machine learning. Many of the tools
+      focused on distributed training, model compilation, and workflow 
+      improvements
+    - Some highlights: 
+      - [[https://github.com/alan-turing-institute/sktime][SKTime]]: Think scikit-learn but for time series.
+      - [[https://github.com/NVlabs/condensa][Condensa]]: Programmable Model Compression
+      - [[https://github.com/NVIDIA/NeMo][NeMo]]: toolkit for building AI applications using neural modules
+    - Vivenne Sze Talk
+      - stressing that DRAM reads are expensive and MACS are not (relatively)
+      - [[https://energyestimation.mit.edu/][energy estimation tool]]
+      - (More or less the same talk as the other keynote she gave)
