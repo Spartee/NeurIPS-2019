@@ -175,3 +175,39 @@
      - Strategic agents maximize utility whereas learning agents play to learn how to play
      - Bidders behavior in online auctions is laregly consistent with a no-regret learner
      - mean-based algorithm: play the historically best action
+** Thursday
+*** Brain-Like Object Recognition with High-Performing Shallow Recurrent ANNs
+     - [[https://cbmm.mit.edu/video/brain-object-recognition-high-performing-shallow-recurrent-anns][Video]]
+     - [[https://github.com/dicarlolab/neurips2019][code]]
+     - Introduced "Brain-Score"  evaluation system
+         - Measures similarty in human mistakes to artificial neural mistakes
+     - CORnet-s performs similar to ResNet on imagenet with signifigantly fewer layers
+     - Theme = shallow networks with recurrent layers can outperform deep networks
+*** Learning Perceptual Inference by Contrasting
+     - [[https://wellyzhang.github.io/project/copinet.html][Site]
+     - [[https://neurips.cc/media/Slides/nips/2019/westexhibitionhallc+b3(12-10-05)-12-10-20-15883-learning_percep.pdf][Slides]]
+*** Universality and individuality in neural dynamics across large populations of recurrent networks
+     - [[https://neurips.cc/media/Slides/nips/2019/westexhibitionhallc+b3(12-10-05)-12-10-25-15884-universality_an.pdf][Slides]]
+     - Really cool, look up later
+*** Better Transfer Learning with Inferred Successor Maps
+     - [[https://neurips.cc/media/Slides/nips/2019/westexhibitionhallc+b3(12-10-05)-12-10-30-15885-better_transfer.pdf][Slides]]
+     - Transfer learning in RL
+     - Mentioned Dayan 1993, fifth time ive heard that here. Need to read that.
+     - Clustered tasks by similarty in reward
+     - Bayesian Successor Representation
+*** A unified theory for the origin of grid cells through the lens of pattern formation
+     - [[https://neurips.cc/media/Slides/nips/2019/westexhibitionhallc+b3(12-10-05)-12-10-35-15886-a_unified_theor.pdf][Slides]]
+     - [[https://ganguli-lab.github.io/grid-pattern-formation/][Site]]
+     - [[https://github.com/ganguli-lab/grid-pattern-formation][Code]] (doesnt seem to be posted yet)
+     - Neural networks learn grid patterns
+     - High level but very interesting talk
+*** Infra-slow brain dynamics as a marker for cognitive function and decline
+     - [[https://neurips.cc/media/Slides/nips/2019/westexhibitionhallc+b3(12-10-05)-12-10-40-15887-infra-slow_brai.pdf][Slides]]
+*** Agency + Automation: Designing Artificial Intelligence into Interactive Systems
+*** Making AI Forget You: Data Deletion in Machine Learning
+     - [[https://neurips.cc/media/Slides/nips/2019/westexhibitionhallc+b3(12-15-50)-12-16-10-15891-making_ai_forge.pdf][Slides]]
+     - [[./ai-forgetting.pdf][Paper]]
+*** XLNet: Generalized Autoregressive Pretraining for Language Understanding
+     - [[./xlnet.pdf][Paper]]
+*** On the Downstream Performance of Compressed Word Embeddings
+
