@@ -224,3 +224,25 @@
       - stressing that DRAM reads are expensive and MACS are not (relatively)
       - [[https://energyestimation.mit.edu/][energy estimation tool]]
       - (More or less the same talk as the other keynote she gave)
+*** Machine Learning for Physical Sciences
+    - Modeling Turbulent Flow
+      - Rayleigh Bernard convection model
+      - Author's Tf-flow model was able to accurately model small scale eddies
+      - Could not speak to what would happen at an increased resolution
+      - Trained in 10K sequences of RBC data
+    - JAX: MD simulations in pure python
+      - JIT compiled for GPU
+      - Ability to run model step by step
+      - ML as a first class citizen, any function can be a neural network
+      - [[https://github.com/google/jax-md][JAX]]
+      - [[./JAX.pdf][Paper]]
+    - Katie Boumann: Black Hole discovery
+    - Alán Aspuru-Guzik
+       - ML and MD
+       - SMILES
+       - Autoencoders for drug discovery
+       - "Self driving laboratory" = least amount of experiments, optimal outcome 
+       - ChemOS, [[https://github.com/aspuru-guzik-group/ChemOS][ChemOS]]
+       - Author warns agasint the use of smiles due to grammer constraints.
+         suggests that SELFIES should be used. SELFIES is feature incomplete
+    - [[https://arxiv.org/a/zdeborova_l_1.html][Lenka Zdeborova]]
