@@ -80,8 +80,6 @@
     - [[./Point-Voxel-3D-DL.pdf][Paper]]
     - Won gold model in Lyft Challenge
     - Shows large improvement from Point NN
-*** Neural Networks with Cheap Differential Operators
-*** Sequential Neural Processes
 *** Conditiional Independance Testing Using GANs
     - [[https://neurips.cc/media/Slides/nips/2019/westballsa+b(10-10-05)-10-10-40-15681-conditional_ind.pdf][Slides]]
     - [[./Conditional-I-testing-GANs.pdf][Paper]]
@@ -126,6 +124,10 @@
     - Shows that a neural architechture search can perform on multiple reinforcement
       learning and supervised learning tasks.
     - Based on NEAT
+*** Other Papers
+**** Neural Networks with Cheap Differential Operators
+**** Sequential Neural Processes
+
 ** Wednesday
 *** Fast and Accurate Least-Mean-Squares Solvers
     - [[./LMS.pdf][Paper]]
@@ -134,32 +136,32 @@
 *** Calibration tests in multi-class classification: A unifying framework
     - [[./Calibration-error.pdf][Paper]]
 *** Verified Uncertainty Calibration
-    - [[https://github.com/AnanyaKumar/verified_calibration][code]]
+    - [[https://github.com/AnanyaKumar/verified_calibration][Code]]
     - [[./uncertainty-calibration.pdf][Paper]]
     - Platt scaling, cannot estimate calibration
     - debiased estimator
 *** Scene Representation Networks: Continuous 3D-Structure-Aware Neural Scene Representations
-    - [[https://vsitzmann.github.io/srns/video/][video]]
-    - [[https://vsitzmann.github.io/srns/slides.pdf][slides]]
-    - [[./Scene-Representation-Networks.pdf][paper]]
+    - [[https://vsitzmann.github.io/srns/video/][Video]]
+    - [[https://vsitzmann.github.io/srns/slides.pdf][Slides]]
+    - [[./Scene-Representation-Networks.pdf][Paper]]
     - [[https://vsitzmann.github.io/][Author Github.io]]
 *** Principal Component Projection and Regression in Nearly Linear Time through Asymmetric SVRG
     - [[https://neurips.cc/media/Slides/nips/2019/westballsa+b(11-10-05)-11-10-35-15700-principal_compo.pdf][Slides]]
     - [[./PCA-SVRG.pdf][Paper]]
     - Combining PCA and linear projection and regression (PCP, PCR)
 *** PIDForest: Anomaly Detection via Partial Identification
-    - [[https://neurips.cc/media/Slides/nips/2019/westballsa+b(11-10-05)-11-10-40-15701-pidforest_anom.pdf][slides]]
-    - [[./pidforest.pdf][paper]]
+    - [[https://neurips.cc/media/Slides/nips/2019/westballsa+b(11-10-05)-11-10-40-15701-pidforest_anom.pdf][Slides]]
+    - [[./pidforest.pdf][Paper]]
 *** Guided Similarity Seperation for Image Retrieval
-    - [[./Guided-Similarity-Seperation.pdf][paper]]
+    - [[./Guided-Similarity-Seperation.pdf][Paper]]
     - Graph convolutionall network that models the descriptor graph where
       the descriptors are what are compared against for images to be retrieved.
 *** CNAPs: Fast and Flexible Multi-Task Classification Using Conditional Neural Adaptive Processes
     - [[./multi-task-class-CNAP.pdf][Paper]]
     - [[https://neurips.cc/media/Slides/nips/2019/westballsa+b(11-15-50)-11-16-05-15704-fast_and_flexib.pdf][Slides]]
+    - [[https://github.com/cambridge-mlg/cnaps][Code]]
     - Showed added classes and added test images without re-training
     - Meta-Dataset: a dataset of datasets
-    - [[https://github.com/cambridge-mlg/cnaps][Code]]
 *** Multimodal Model-Agnostic Meta-Learning via Task-Aware Modulation
      - [[https://vuoristo.github.io/MMAML/mmaml_slides.pdf][Slides]]
 *** Efficient Meta Learning via Minibatch Proximal Update
@@ -167,8 +169,8 @@
 *** Reconciling meta-learning and continual learning with online mixtures of tasks
      - [[https://drive.google.com/file/d/1nFyU_7YF01VXjxLHdQ3_EYkLhUV8Jhmy/view][Slides]]
 *** Beyond Online Balanced Descent: An Optimal Algorithmfor Smoothed Online Convex Optimization
-     - [[https://neurips.cc/media/Slides/nips/2019/westexhibitionhallb(11-15-50)-11-16-40-15821-beyond_online_b.pdf][slides]]
-     - [[./Online-balanced-descent.pdf][paper]]
+     - [[https://neurips.cc/media/Slides/nips/2019/westexhibitionhallb(11-15-50)-11-16-40-15821-beyond_online_b.pdf][Slides]]
+     - [[./Online-balanced-descent.pdf][Paper]]
      - Goal wasnt to minimize regret, was to acheive optimal competative ratio.
      - Competitive ratio: Minimize cost of learner action compared to best possible course of action
 *** Strategizing against No-regret Learners
@@ -179,24 +181,23 @@
 ** Thursday
 *** Brain-Like Object Recognition with High-Performing Shallow Recurrent ANNs
      - [[https://cbmm.mit.edu/video/brain-object-recognition-high-performing-shallow-recurrent-anns][Video]]
-     - [[https://github.com/dicarlolab/neurips2019][code]]
+     - [[https://github.com/dicarlolab/neurips2019][Code]]
      - Introduced "Brain-Score"  evaluation system
          - Measures similarty in human mistakes to artificial neural mistakes
      - CORnet-s performs similar to ResNet on imagenet with signifigantly fewer layers
      - Theme = shallow networks with recurrent layers can outperform deep networks
 *** Learning Perceptual Inference by Contrasting
-     - [[https://wellyzhang.github.io/project/copinet.html][Site]
+     - [[https://wellyzhang.github.io/project/copinet.html][Site]]
      - [[https://neurips.cc/media/Slides/nips/2019/westexhibitionhallc+b3(12-10-05)-12-10-20-15883-learning_percep.pdf][Slides]]
 *** Universality and individuality in neural dynamics across large populations of recurrent networks
      - [[https://neurips.cc/media/Slides/nips/2019/westexhibitionhallc+b3(12-10-05)-12-10-25-15884-universality_an.pdf][Slides]]
-     - Really cool, look up later
 *** Better Transfer Learning with Inferred Successor Maps
      - [[https://neurips.cc/media/Slides/nips/2019/westexhibitionhallc+b3(12-10-05)-12-10-30-15885-better_transfer.pdf][Slides]]
      - Transfer learning in RL
      - Mentioned Dayan 1993, fifth time ive heard that here. Need to read that.
      - Clustered tasks by similarty in reward
      - Bayesian Successor Representation
-*** A unified theory for the origin of grid cells through the lens of pattern formation
+*** A Unified Theory for the Origin of Grid Cells through the Lens of Pattern Formation
      - [[https://neurips.cc/media/Slides/nips/2019/westexhibitionhallc+b3(12-10-05)-12-10-35-15886-a_unified_theor.pdf][Slides]]
      - [[https://ganguli-lab.github.io/grid-pattern-formation/][Site]]
      - [[https://github.com/ganguli-lab/grid-pattern-formation][Code]] (doesnt seem to be posted yet)
@@ -210,7 +211,8 @@
      - [[./ai-forgetting.pdf][Paper]]
 *** XLNet: Generalized Autoregressive Pretraining for Language Understanding
      - [[./xlnet.pdf][Paper]]
-*** On the Downstream Performance of Compressed Word Embeddings
+*** Other Papers
+**** On the Downstream Performance of Compressed Word Embeddings
 ** Workshops
 *** MLSys: Systems for machine learning
     - This workshop surronds tools for machine learning. Many of the tools
